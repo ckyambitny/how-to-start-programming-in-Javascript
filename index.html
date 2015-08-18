@@ -22,10 +22,190 @@
                 <img src="themes/warsawjs/pictures/logo.png">
             </div>
             <div class="content">
-                <h2>WarsawJS Presentation Template</h2>
-                <p>Author Name <a href="http://twitter.com/author">@author</a>
+                <h4>"How to start programming in JavaScript?"[PL]</h4>
+                <img style="width: 150px; height: 150px;" src="avatar.jpg"></img>
+                <p>Bartłomiej Sobczuk </p>
+                <ul >
+                    <li style="display: inline;"><a href="http://twitter.com/ckyambitny">@twitter</a></li>
+                    <li style="display: inline;"><a href="http://www.github.com/ckyambitny/">@github</a></li>
+                </ul>
             </div>
         </div>
+    </section>
+
+    <section class="slide">
+        <div>
+            <h2>What does a JavaScript developer do?</h2>
+            <ul>
+                <li>FrontEnd
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                    </ul>
+                </li>
+                <li>BackEnd
+                    <ul>
+                        <li>node.js</li>
+                        <li>Database: MongoDB, MySQL, CouchDB, Firebase etc </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div>
+            <h2>What is cool about FrontEnd?</h2>
+            <ul>
+                <li>Bringing a designer’s concept to life.</li>
+                <li>It is your goal to make website/application user-friendly as possible.</li>
+                <li>User is experiencing your work first.</li>
+                <li>Basically you paint with code.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="slide cover">
+        <h2 style="color: red; text-align: center;">This is how it may look without guidence.</h2>
+        <div>
+            <img src="user.gif" alt="No guidence">
+        </div>
+    </section>
+    
+    <section class="slide">
+        <div>
+            <h2>What is HTML?</h2>
+            <ul>
+                <li>It's markup language for web pages</li>
+                <li>It's all about the structure</li>
+                <li>Browser translates HTML into DOM</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div>
+            <h2>WTF is DOM?</h2>
+            <p>It's confusing at the beginning</p>
+            <p>For now, all we care about it that DOM provides interface to access elements and their properties with JavaScript and do whatever we want to them, like:</p>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div>
+            <h2>Things we can do to DOM element with JavaScript</h2>
+            <ul>
+                <li>Find them</li>
+                <li>Change its style</li>
+                <li>Remove them</li>
+                <li>Append other elements</li>
+                <li>Animate</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div>
+            <h2>My first page. Head</h2>
+            <pre>
+                <code>&lt;!DOCTYPE html&gt;</code>
+                <code>&lt;html lang="en"&gt;</code>
+                <code>&lt;head&gt;</code>
+                <code>    &lt;title&gt;My First Page&lt;/title&gt;</code>
+                <code>    &lt;meta charset="utf-8"&gt;</code>
+                <code>    &lt;link rel="stylesheet" href="./styles/styles.css"&gt;</code>
+                <code>    &lt;script type="text/javascript" src="./scripts/main.js"&gt;</code>
+                <code>&lt;/head&gt;</code>
+            </pre>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div>
+            <h2>Body</h2>
+            <pre>
+                <code>&lt;body&gt;</code>
+                <code>    &lt;div class="big-div"&gt;</code>
+                <code>        &lt;p id="big-par"&gt; Hello World! &lt;/p&gt;</code>
+                <code>    &lt;/div&gt;</code>
+                <code>&lt;/body&gt;</code>
+                <code>&lt;/html&gt;</code>
+            </pre>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div>
+            <h2>Add some styling with CSS</h2>
+            <ul>
+                <li>Create a selector</li>
+                <li>Describe how described element should behave</li>
+                <li>Keep your styles in separate file</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div>
+            <h2>style.css</h2>
+            <pre>
+                <code>.big-div {</code>
+                <code>    width: 500px;</code>
+                <code>}</code>
+                <code>#big-par {</code>
+                <code>    font-size: 30px;</code>
+                <code>}</code>
+            </pre>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div>
+            <h2>main.js</h2>
+            <pre>
+                <code>window.onload = function () {</code>
+                <code>    var text = "Hello Warsaw";</code>
+                <code>    var paragraph = document.querySelector("#big-par");</code>
+                <code>    paragraph.innerHTML = text;</code>
+                <code>};</code>
+            </pre>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div>
+            <h2>Ok, I'm in. Where to start?</h2>
+            <ul>No preparation required:
+                <ul>Free Stuff:
+                    <li><a href="https://www.codecademy.com/tracks/web">Codecademy Web Track, HTML and CSS basics.</a></li>
+                    <li><a href="https://www.codecademy.com/tracks/javascript">Codecademy JavaScript Track</a></li>
+                </ul>
+                <ul>$$ Required:
+                    <li><a href="https://www.codeschool.com/">CodeSchool</a></li>
+                </ul>
+            </ul>
+        </div>
+    </section>
+    <section class="slide">
+        <div>
+            <h2>Two ways:</h2>
+            <ul>
+                <li>Free</li>
+                <li>Paid</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div>
+            <h2>Hungry for more?</h2>
+            <ul>Something to read for starters:
+                <li><a href="http://ferrante.pl/books/html/index.html#toc">"Moja pierwsza strona internetowa w HTML5 i CSS3"</a></li>
+                <li><a href="http://learn.shayhowe.com/html-css/">Nice tutorial</a></li>
+                <li><a href="http://html5doctor.com/lets-talk-about-semantics/">Semantics</a></li>
+            </ul>
+       </div>
     </section>
 
     <section class="slide">
