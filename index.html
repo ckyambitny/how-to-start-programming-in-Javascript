@@ -183,13 +183,38 @@
             <h2>main.js</h2>
             <pre>
                 <code>(function () {</code>
-                <code>    var text = "Hello Warsaw";</code>
                 <code>    var paragraph = document.querySelector("#big-par");</code>
-                <code>    paragraph.innerHTML = text;</code>
+                <code>    window.setTimeout(function() {</code>
+                <code>        paragraph.innerHTML = "Hello WarsawJS!";</code>
+                <code>        paragraph.style.fontSize ="60px";</code>
+                <code>        paragraph.style.color = "red";</code>
+                <code>        paragraph.style.textAlign ="center";</code>
+                <code>        }, 5000);</code>
                 <code>}());</code>
             </pre>
         </div>
     </section>
+
+    <section class="slide">
+        <div>
+            <h2>Efekt:</h2>
+            <div class="big-div">
+                <p id="big-par" style="font-size: 30px;"> Hello World! </p>
+            </div>
+        </div>
+    </section>
+    <script>
+        (function() {
+            var text = "Hello WarsawJS!";
+            var paragraph = document.querySelector("#big-par");
+            window.setTimeout(function () {
+                paragraph.style.fontSize = "60px";
+                paragraph.style.color = "red";
+                paragraph.style.textAlign = "center";
+                paragraph.innerHTML = text;
+            }, 4000);
+        }());
+    </script>
 
     <section class="slide">
         <div>
@@ -204,6 +229,7 @@
             </ul>
         </div>
     </section>
+
     <section class="slide">
         <div>
             <h2>Preparations:</h2>
